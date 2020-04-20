@@ -1,0 +1,182 @@
+html, body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: #050108;  /* fallback for old browsers */
+background: -webkit-linear-gradient(90deg, #050108, #3f1d33, #050108);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(90deg, #050108, #3f1d33, #050108);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/* Got the gradient code from https://uigradients.com/#Lawrencium*/
+
+
+/*NAV*/
+.main-menu{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.main-menu a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.5em;
+  font-family: 'Work Sans', sans-serif;
+  color:  #9bffc4/* #ecff5e*//*#e3f74a #f2d95c*/;
+  font-weight: bold;
+  text-transform: uppercase;
+
+
+}
+.main-menu a:hover{
+  color: #3e2424;
+  background-color: #9bffc4/* #ecff5e*//*#e3f74a #f2d95c*/;
+
+}
+
+
+
+/*CONTENT*/
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 600px));
+  margin: 0 auto;
+  justify-content:center
+  width: 1200px;
+  max-width: 80vw;
+  /*grid-template-columns: repeat(2, 2fr);*/
+  /*grid-template-columns: repeat(auto-fill, minmax(300px,1fr));*/
+  /*grid-template-columns: repeat(auto-fill,1fr);*/
+
+
+}
+
+.gallery-container{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.Cthulhu:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+
+
+h1, h2, p {
+  color: white;
+}
+
+h1{
+font-family: 'Almendra', serif;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+}
+
+h2{
+  font-family: 'Archivo', sans-serif;
+  font-size: 1em;
+}
+.Quote{
+  font-family: 'Archivo', sans-serif;
+  font-size: 2em;
+  color: white;
+  line-height: 1em;
+}
+
+p{
+  font-family: 'Archivo', sans-serif;
+  font-size: 1em;
+  padding: 15px;
+  line-height: 1.5em;
+}
+
+.front-page{
+font-family: 'Almendra', serif;
+font-size: 3em;
+}
+
+.story{
+  display: grid;
+  /*grid-template-columns: ;
+  grid-template-rows: 2fr;*/
+
+}
+
+.story img{
+  object-fit: cover;
+  height:200px;
+  width: 200px;
+}
+
+img{
+max-width: 100%;
+height:auto;
+
+}
+
+.story img:hover{
+  border:10px solid #9bffc4;
+}
+
+.about-author{
+  border-radius: 50%;
+
+  height: auto;
+}
+
+/*Footer*/
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+
+
+}
+
+.SoMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SoMe a{
+  font-size: 2em;
+  padding: 5%;
+  color:#9bffc4;
+}
+
+.SoMe a:hover{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.credits{
+  /*color: #302b63;*/
+  color:#9bffc4; /*#f4e02c;*/
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.span{
+  font-weight: bold;
+}
